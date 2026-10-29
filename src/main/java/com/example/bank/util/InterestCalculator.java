@@ -12,7 +12,7 @@ public final class InterestCalculator {
      * Computes one month of interest. The result is rounded down to the cent.
      *
      * @param balanceCents the balance in cents
-     * @param annualRatePercent the annual rate in percent, for example 3.0 for 3%
+     * @param ratePercent the annual rate in percent, for example 3.0 for 3%
      * @return the interest for one month, in cents, rounded down
      * @throws IllegalArgumentException if the rate is negative
      */
