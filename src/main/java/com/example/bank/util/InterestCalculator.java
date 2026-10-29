@@ -20,7 +20,7 @@ public final class InterestCalculator {
         if (annualRatePercent < 0) {
             throw new IllegalArgumentException("Rate must not be negative: " + annualRatePercent);
         }
-        return (long) Math.floor(balanceCents * annualRatePercent / 100.0 / 12.0);
+        return Math.round(balanceCents * annualRatePercent / 100.0 / 12.0);
     }
 
     /**

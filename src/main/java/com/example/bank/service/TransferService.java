@@ -33,7 +33,7 @@ public class TransferService {
      * @throws AccountFrozenException if one of the accounts is frozen
      * @throws IllegalArgumentException if both IBANs are the same account
      */
-    public void transfer(String fromIban, String toIban, long amountCents)
+    public void transfer(String fromIban, String toIban, long amountCents,String reference)
             throws AccountNotFoundException, InsufficientFundsException, AccountFrozenException {
         Account from = accounts.find(fromIban);
         Account to = accounts.find(toIban);

@@ -20,7 +20,7 @@ public final class IbanValidator {
      * @return the IBAN without spaces, in upper case
      */
     public static String normalize(String iban) {
-        return iban.replace(" ", "").toUpperCase(Locale.ROOT);
+        return iban.replaceAll("[\\s-]", "").toUpperCase(Locale.ROOT);
     }
 
     /**
