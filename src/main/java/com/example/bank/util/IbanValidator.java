@@ -27,6 +27,7 @@ public final class IbanValidator {
      * Tells whether an IBAN has a valid format and checksum.
      *
      * @param iban the IBAN to check; spaces are ignored
+     * @return true if the IBAN has a valid format and checksum; false otherwise
      */
     public static boolean isValid(String iban) {
         String s = normalize(iban);
