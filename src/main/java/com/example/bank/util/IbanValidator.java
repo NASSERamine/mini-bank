@@ -20,14 +20,14 @@ public final class IbanValidator {
      * @return the IBAN without spaces, in upper case
      */
     public static String normalize(String iban) {
-        return iban.replace(" ", "").toUpperCase(Locale.ROOT);
+        return iban.replaceAll("[\\s-]", "").toUpperCase(Locale.ROOT);
     }
 
     /**
      * Tells whether an IBAN has a valid format and checksum.
      *
      * @param iban the IBAN to check; spaces are ignored
-     * @return true when the IBAN is valid
+     * @return true if the IBAN has a valid format and checksum; false otherwise
      */
     public static boolean isValid(String iban) {
         String s = normalize(iban);
