@@ -24,10 +24,9 @@ public final class InterestCalculator {
     }
 
     /**
-     * Computes the minimum of onterest, with monthly
-     * compounding. Each month is rounded down before the next one.
+     * Computes the total interest earned, with monthly compounding. Each month's interest is rounded down before the next one.
      *
-     * @param balanceCe the starting balance in cents
+     * @param balanceCents the starting balance in cents
      * @param annualRatePercent the annual rate in percent
      * @param months the number of months, zero or more
      * @return the total interest earned, in cents
