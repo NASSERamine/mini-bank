@@ -30,7 +30,7 @@ public final class InterestCalculator {
      * @param annualRatePercent the annual rate in percent
      * @param months the number of months, zero or more
      * @return the total interest earned, in cents
-     * @throws IllegalArgumentException if the rate or the number of months is negative
+     * @throws IllegalArgumentException if the number of months is negative, or if the rate is negative and at least one month is requested
      */
     public static long compoundInterest(long balanceCents, double annualRatePercent, int months) {
         if (months < 0) {
